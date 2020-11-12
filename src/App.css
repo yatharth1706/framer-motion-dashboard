@@ -1,6 +1,18 @@
+html,body{
+  width: 100%;
+  height: 100%;
+
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+ 
 }
 
 .App-logo {
@@ -14,15 +26,38 @@
 }
 
 .sidebar{
-  width: 20%;
+  width: 18%;
   height : 100%;
   background-color : #03020E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftNav {
+  padding: 10px;
+  width: 100%;
+  height: 45px;
+  line-height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.leftNav:nth-child(1){
+  background-color: #3F3D3D;
 }
 
 .sidebar[data-isOn="true"]{
-  width: 10%;
+  width: 9%;
 }
 
+.rightNav{
+  width: 82%;
+}
+
+.rightNav[data-isOn="true"]{
+  width: 91%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
