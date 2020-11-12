@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import {motion} from 'framer-motion';
+import {useState} from 'react';
+import AppsIcon from '@material-ui/icons/Apps';
 
 function App() {
+  const [isToggle, setIsToggle] = useState(false);
+
+  const toggleSwitch = () => {
+    console.log("asdf");
+    setIsToggle(!isToggle);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "main" style={{width: "100%", height: "100%", display: "flex"}}>
+        <motion.div layout className = "sidebar" data-isOn = {isToggle} >
+          
+        </motion.div>
+        <div style={{height: "47px", width:"auto", backgroundColor: "white", boxShadow : "2px 0px 10px lightgray", padding: "5px"}}>
+          <AppsIcon style={{ fontSize: 35, marginTop : "5px", cursor : "pointer" }} onClick = {toggleSwitch}></AppsIcon>
+        </div>
+      </div>
     </div>
   );
 }
