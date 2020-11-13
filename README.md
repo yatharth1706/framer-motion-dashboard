@@ -2,7 +2,7 @@
 
 Work in progress
 
-![Dashboard](https://raw.githubusercontent.com/yatharth1706/framer-motion-dashboard/master/public/dashboardGif.gif)
+![Dashboard](https://raw.githubusercontent.com/yatharth1706/framer-motion-dashboard/master/src/images/dashboardPreview.gif)
 
 
 # Getting Started with Create React App
