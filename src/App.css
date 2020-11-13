@@ -47,8 +47,12 @@ html,body{
   background-color: #3F3D3D;
 }
 
+.leftNavText[data-isOn="true"]{
+  display: none;
+}
+
 .sidebar[data-isOn="true"]{
-  width: 9%;
+  width: 4%;
 }
 
 .rightNav{
@@ -56,7 +60,7 @@ html,body{
 }
 
 .rightNav[data-isOn="true"]{
-  width: 91%;
+  width: 96%;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
