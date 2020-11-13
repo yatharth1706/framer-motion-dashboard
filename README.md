@@ -1,4 +1,4 @@
-# Dasboard
+# Dashboard
 
 Work in progress
 
