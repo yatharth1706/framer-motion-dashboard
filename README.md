@@ -1,3 +1,10 @@
+# Dasboard
+
+Work in progress
+
+![Dashboard](https://raw.githubusercontent.com/yatharth1706/framer-motion-dashboard/master/public/dashboardGif.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
